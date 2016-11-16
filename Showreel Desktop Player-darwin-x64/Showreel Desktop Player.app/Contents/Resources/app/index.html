@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Desktop Showreel Player</title>
+  </head>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+	<link href="public/css/main.css" media="all" rel="stylesheet" />
+
+  <body>
+    <div id="root">
+<!-- 
+      We are using node <script>document.write(process.versions.node)</script>,
+      Chromium <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.
+-->
+    </div>
+    <script>
+      (function() {
+        const script = document.createElement('script');
+        script.src = process.env.ENV === 'development' ? 'http://localhost:9000/public/js/bundle.js' : './public/js/bundle.js';
+        document.write(script.outerHTML);
+      }());
+    </script> 
+  </body>
+
+</html>

@@ -1,0 +1,56 @@
+{
+  "name": "showreel-desktop-player",
+  "version": "0.1.0",
+  "description": "A showreel player built on React & Electron",
+  "main": "main.js",
+  "productName": "Showreel Desktop Player",
+  "scripts": {
+    "start": "ENV=development electron .",
+    "dev": "concurrently -k 'babel-node server.js' 'npm start'",
+    "server": "babel-node server.js",
+    "prod": ""
+  },
+  "repository": "https://github.com/lcc-prototyping-lab/desktop-showreel-player",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Gareth Foote",
+  "license": "CC0-1.0",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ]
+  },
+  "dependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "electron-prebuilt": "^0.36.0",
+    "classnames": "^2.2.5",
+    "purecss": "^0.6.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-html5video": "^1.2.12"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.2",
+    "babel-loader": "^6.2.7",
+    "babel-polyfill": "^6.16.0",
+    "babelify": "^7.2.0",
+    "concurrently": "^3.1.0",
+    "css-loader": "^0.25.0",
+    "electron": "^1.4.1",
+    "electron-rebuild": "^1.3.0",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "postcss-loader": "^1.1.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.2",
+    "webpack-target-electron-renderer": "^0.4.0"
+  }
+}
